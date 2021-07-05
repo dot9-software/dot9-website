@@ -38,18 +38,17 @@ const TESTIMONIALS = [
         authorImageUrl: require("../images/jack_moxon.jpg").default,
         companyName: "Blue Canvas",
         companyUrl: "https://bluecanvas.io",
-        
     },
     {
-      text: `dot9 has been our full product development team from Prototype to MVP to now Release, and working with them has been a great pleasure.
+        text: `dot9 has been our full product development team from Prototype to MVP to now Release, and working with them has been a great pleasure.
       Their expertise and work quality across Engineering, Product and Design has repeatedly impressed us and we have a great relationship. We'll definitely keep them as our dev team, and can recommend them as a full end-to-end partner for efficiently and thoroughly building your product.`,
-      textMore: undefined,
-      authorName: "Owen Smith",
-      authorDescription: "CEO and Co-Founder",
-      authorImageUrl: require("../images/owen_smith.jpeg").default,
-      companyName: "Ovrnite App ",
-      companyUrl: "https://www.ovrnite.app/",
-  },
+        textMore: null,
+        authorName: "Owen Smith",
+        authorDescription: "CEO and Co-Founder",
+        authorImageUrl: require("../images/owen_smith.jpeg").default,
+        companyName: "Ovrnite App ",
+        companyUrl: "https://www.ovrnite.app/",
+    },
 ];
 
 function Testimonials() {
@@ -60,8 +59,8 @@ function Testimonials() {
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                         <h2 className="h2">
-                            Trusted by top-tier startups and companies all
-                            over the world
+                            Trusted by top-tier startups and companies all over
+                            the world
                         </h2>
                     </div>
 
@@ -78,7 +77,9 @@ function Testimonials() {
                                     textMore={testimonial.textMore}
                                     authorName={testimonial.authorName}
                                     authorImageUrl={testimonial.authorImageUrl}
-                                    authorDescription={testimonial.authorDescription}
+                                    authorDescription={
+                                        testimonial.authorDescription
+                                    }
                                     companyName={testimonial.companyName}
                                     companyUrl={testimonial.companyUrl}
                                 />
