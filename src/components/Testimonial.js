@@ -32,8 +32,8 @@ export default function Testimonial({
                         />
                     </div>
                     <ReadMoreQuote
-                        text={`“`+text+`“`}
-                        secondaryText={`“`+textMore+`“`}
+                        text={text}
+                        secondaryText={textMore}
                         min={150}
                         ideal={200}
                         max={200}

@@ -43,7 +43,7 @@ const TESTIMONIALS = [
     {
       text: `dot9 has been our full product development team from Prototype to MVP to now Release, and working with them has been a great pleasure.
       Their expertise and work quality across Engineering, Product and Design has repeatedly impressed us and we have a great relationship. We'll definitely keep them as our dev team, and can recommend them as a full end-to-end partner for efficiently and thoroughly building your product.`,
-      textMore: ``,
+      textMore: undefined,
       authorName: "Owen Smith",
       authorDescription: "CEO and Co-Founder",
       authorImageUrl: require("../images/owen_smith.jpeg").default,
