@@ -1,21 +1,5 @@
 import React from "react";
-import ReadMoreQuote from "./ReadMoreQuote";
 import Testimonial from "../components/Testimonial";
-
-const TESTIMONIAL_BLUECANVAS = `“Working with dot9 has been great for our business. We have
-been able to land some significant contracts with dot9's help,
-and we’ll definitely expand our cooperation with them. We have
-been really impressed by the quality of services we received. Blue Canvas can definitely
-recommend dot9 to everyone looking for high-quality,
-highly-flexible engineering solutions.“`;
-const TESTIMONIAL_BLUECANVAS_SECONDARY = `They worked on integrating Blue Canvas with
-external services, and what was particularly delightful was
-the quality and independence with which they designed and
-implemented those integrations across dozens of technologies
-(Java, React, Express.js etc...) and hard-to-understand APIs
-(Jira, Azure). They charge reasonable prices, are professional
-and courteous in dealings, and deliver our items, even ones
-outside the original scope. `;
 
 const TESTIMONIALS = [
     {
