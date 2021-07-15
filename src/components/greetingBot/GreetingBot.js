@@ -10,7 +10,7 @@ export default function GreetingBot() {
     return (
         <>
             <div className="container w-2/12 fixed right-5 bottom-0 floatInBottom z-0 hidden lg:block" >
-                <img src={botImage} alt="greeting bot" />
+                <img src={botImage} alt="greeting bot" className="greetingImage" />
             </div>
             <button
                 className="greeting-box border-2 border-gray-300 fixed bottom-3 floatInBottomBox z-10 lg:flex items-center bg-white rounded-full text-sm group p-4 shadow-2xl hidden"
