@@ -7,9 +7,19 @@ export default function GreetingBot() {
 
     const { t } = useTranslation();
 
+    document.addEventListener('scroll', (e) => {
+        let greetingBot = document.getElementById('greetingBot');
+
+        if (window.scrollY >= document.body.clientHeight - window.innerHeight) {
+            greetingBot.classList.add(['invisible']);
+        } else {
+            greetingBot.classList.remove(['invisible']);
+        }
+    });
+
     return (
-        <>
-            <div className="container w-2/12 fixed right-5 bottom-0 floatInBottom z-0 hidden lg:block" >
+        <div id="greetingBot">
+            <div className="container w-2/12 fixed right-5 bottom-0 floatInBottom z-0 lg:block" >
                 <img src={botImage} alt="greeting bot" className="greetingImage" />
             </div>
             <button
@@ -25,6 +35,6 @@ export default function GreetingBot() {
                 </span>
                 <span className="text-gray-600 ml-3">{t('greeting-bot-text')}</span>
             </button>
-        </>
+        </div>
     );
 }
