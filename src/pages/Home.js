@@ -1,4 +1,5 @@
 import React from "react";
+import GreetingBot from "../components/greetingBot/GreetingBot";
 import FeaturesBlocks from "../partials/FeaturesBlocks";
 import Footer from "../partials/Footer";
 import Header from "../partials/Header";
@@ -25,6 +26,8 @@ function Home() {
 
       {/*  Site footer */}
       <Footer />
+
+      <GreetingBot />
     </div>
   );
 }

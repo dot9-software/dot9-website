@@ -1,0 +1,43 @@
+$dark_blue: #47597E;
+
+.floatInBottom {
+    animation-name: floatInFromBottom;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    bottom: -100%;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s
+}
+
+@keyframes floatInFromBottom {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.floatInBottomBox {
+    animation-name: floatInFromBottomBox;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 1.4s;
+    bottom: -100%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes floatInFromBottomBox {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 0.75rem;
+    }
+}
+
+.greeting-box {
+    right: 10%;
+}
