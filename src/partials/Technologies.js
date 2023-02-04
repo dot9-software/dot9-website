@@ -10,9 +10,7 @@ import {
     FaDocker,
     FaJava,
     FaVuejs,
-    FaDrawPolygon,
 } from "react-icons/fa";
-// import { GrGolang } from "react-icons/gr";
 import { RiFlutterLine } from "react-icons/ri";
 import { DiResponsive, DiGoogleCloudPlatform, DiGo } from "react-icons/di";
 import { AiFillGithub } from "react-icons/ai";
@@ -23,37 +21,34 @@ import { useTranslation } from "react-i18next";
 const techlist = [
     [<FaPython />, "Python"],
     [<DiGo />, "Go"],
+    [<FaJava />, "Java"],
     [<SiJavascript />, "JavaScript"],
     [<SiTypescript />, "Typescript"],
+    [<FaNode />, "Node"],
     [<AiFillGithub />, "Git"],
     [<FaFigma />, "UX / UI Design"],
     [<DiResponsive />, "Responsive Design"],
-    [<FaDrawPolygon />, "Graphics"],
     [<FaDocker />, "Docker"],
     [<DiGoogleCloudPlatform />, "Google Cloud Platform"],
     [<FaAws />, "Amazon Web Services"],
-    [<FaNode />, "Node"],
     [<FaReact />, "React"],
     [<FaAngular />, "Angular"],
     [<FaVuejs />, "Vue"],
-    [<FaJava />, "Java"],
     [<FaApple />, "Native iOS"],
     [<FaAndroid />, "Native Android"],
     [<RiFlutterLine />, "Flutter"],
-    //  [<GrGolang />, "golang"],
 ];
 
 export default function Technologies() {
-
     const { t } = useTranslation();
 
     return (
         <section className="relative">
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                <h2 className="h2 mt-4 mb-4">{t('technologies-title')}</h2>
+                <h2 className="h2 mt-4 mb-4">{t("technologies-title")}</h2>
                 <p className="text-xl text-gray-600">
-                    {t('technologies-subtitle')}
+                    {t("technologies-subtitle")}
                 </p>
             </div>
 

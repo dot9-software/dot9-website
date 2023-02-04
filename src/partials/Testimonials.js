@@ -12,7 +12,34 @@ function Testimonials() {
             authorCompany: "Blue Canvas",
             authorCompanyUrl: "https://bluecanvas.io",
             authorRole: "CEO and Co-Founder",
-            authorImageUrl: require("../images/jack_moxon.jpg").default,
+            authorImageUrl: "/images/jack_moxon.jpg",
+        },
+        {
+            id: "2",
+            text: "dot9 has been our full product development team from Prototype to MVP to now Release, and working with them has been a great pleasure. Their expertise and work quality across Engineering, Product and Design has repeatedly impressed us and we have a great relationship. We'll definitely keep them as our dev team, and can recommend them as a full end-to-end partner for efficiently and thoroughly building your product.",
+            authorName: "Owen Smith",
+            authorCompany: "Ovrnite App",
+            authorCompanyUrl: "https://www.ovrnite.app/",
+            authorRole: "CEO and Co-Founder",
+            authorImageUrl: "/images/owen_smith.jpeg",
+        },
+        {
+            id: "3",
+            text: "Our recently released Visito app has been really well received by users. Unfortunately, we only had the capacity to build an iOS version of the app. Of course, we also wanted to serve the Android market ASAP. This is where dot9 came into play for us: In record time dot9 was able to port the iOS app to Android and thus enabled us to have a successful product launch. The quality of the delivered software and also the consulting was highly satisfactory. I would especially like to emphasize how smooth the cooperation was: no administrative effort, extremely high level of independence, early escalation of potential problems. During the whole project we could concentrate on our own work and just let dot9 do it. Just as you would want from a technology partner.",
+            authorName: "Alexander Korus",
+            authorCompany: "visito.me App",
+            authorCompanyUrl: "https://visito.me/",
+            authorRole: "CEO",
+            authorImageUrl: "/images/alexander_korus.jpeg",
+        },
+        {
+            id: "4",
+            text: "I received very competent and professional advice here. The work was carried out perfectly. In addition, whenever I had a question, I received extensive videos with explanations. This is how I imagine working together. I always feel that I am in very good hands with dot9 with my software projects. Highly recommended, I gladly continue the collaboration.",
+            authorName: "Eberhard Zeidler",
+            authorCompany: "Zeidler Glas Gruppe",
+            authorCompanyUrl: "https://www.zeidler-gruppe.com/",
+            authorRole: "Managing Director",
+            authorImageUrl: "/images/zeidler_logo.png",
         },
     ];
 
@@ -35,11 +62,8 @@ function Testimonials() {
                                 <Testimonial
                                     key={testimonial.id}
                                     text={testimonial.text}
-                                    textMore={testimonial.text}
                                     authorName={testimonial.authorName}
-                                    authorImageUrl={
-                                        testimonial.authorImage?.url || ""
-                                    }
+                                    authorImageUrl={testimonial.authorImageUrl}
                                     authorDescription={testimonial.authorRole}
                                     companyName={testimonial.authorCompany}
                                     companyUrl={testimonial.authorCompanyUrl}
