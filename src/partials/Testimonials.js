@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Testimonial from "../components/Testimonial";
 import { useTranslation } from "react-i18next";
 
