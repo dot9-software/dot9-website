@@ -34,7 +34,7 @@ function Testimonials() {
         },
         {
             id: "4",
-            text: "I received very competent and professional advice here. The work was carried out perfectly. In addition, whenever I had a question, I received extensive videos with explanations. This is how I imagine working together. I always feel that I am in very good hands with dot9 with my software projects. Highly recommended, I gladly continue the collaboration.",
+            text: "I received very competent and professional advice here. The work was carried out perfectly. In addition, whenever I had a question, I received extensive screen recording explanations. This was a great collaboration. I always feel that I am in very good hands with dot9 with my software projects. Highly recommended, I gladly continue the collaboration.",
             authorName: "Eberhard Zeidler",
             authorCompany: "Zeidler Glas Gruppe",
             authorCompanyUrl: "https://www.zeidler-gruppe.com/",
